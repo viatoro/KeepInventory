@@ -42,7 +42,6 @@ class NoDropOnDeathPlugin : JavaPlugin(), Listener {
             block.type = Material.CHEST
             if (block.state is Chest) {
                 val chest = block.state as Chest
-                chest.blockData = chest.blockData.apply { (this as Type).let { Type.SINGLE } }
                 chest.inventory.addItem(ItemStack(Material.WOODEN_AXE))
                 chest.inventory.addItem(ItemStack(Material.WOODEN_PICKAXE))
                 chest.inventory.addItem(ItemStack(Material.WOODEN_SWORD))

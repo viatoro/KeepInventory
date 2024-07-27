@@ -15,7 +15,7 @@ plugins {
     id("com.github.johnrengelman.shadow") version "7.1.2"
 }
 group = "com.viatoro.mc"
-version = "1.0.1"
+version = "1.0.0"
 
 repositories {
     // Use Maven Central for resolving dependencies.
@@ -29,7 +29,7 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 //    implementation(libs.bundles.kotlinLogging)
-    compileOnly("org.spigotmc:spigot-api:1.21-R0.1-SNAPSHOT")
+    compileOnly("org.spigotmc:spigot-api:1.20.6-R0.1-SNAPSHOT")
 //    compileOnly("org.spigotmc:spigot:1.21-R0.1-SNAPSHOT")
     // Use the Kotlin JUnit 5 integration.
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
