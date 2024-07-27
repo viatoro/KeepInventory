@@ -8,7 +8,6 @@ import org.bukkit.event.Listener
 import org.bukkit.event.entity.PlayerDeathEvent
 import org.bukkit.event.player.PlayerJoinEvent
 import org.bukkit.plugin.java.JavaPlugin
-import org.bukkit.block.data.type.Chest.Type
 import org.bukkit.inventory.ItemStack
 
 class NoDropOnDeathPlugin : JavaPlugin(), Listener {
@@ -42,11 +41,24 @@ class NoDropOnDeathPlugin : JavaPlugin(), Listener {
             block.type = Material.CHEST
             if (block.state is Chest) {
                 val chest = block.state as Chest
-                chest.inventory.addItem(ItemStack(Material.WOODEN_AXE))
-                chest.inventory.addItem(ItemStack(Material.WOODEN_PICKAXE))
-                chest.inventory.addItem(ItemStack(Material.WOODEN_SWORD))
-                chest.inventory.addItem(ItemStack(Material.BREAD, 16))
-                chest.inventory.addItem(ItemStack(Material.TORCH, 4))
+                chest.inventory.addItem(ItemStack(Material.STONE_AXE))
+                chest.inventory.addItem(ItemStack(Material.STONE_PICKAXE))
+                chest.inventory.addItem(ItemStack(Material.STONE_SWORD))
+                chest.inventory.addItem(ItemStack(Material.STICK,64))
+                chest.inventory.addItem(ItemStack(Material.OAK_PLANKS,64))
+                chest.inventory.addItem(ItemStack(Material.OAK_LOG,64))
+                chest.inventory.addItem(ItemStack(Material.OAK_SAPLING,64))
+                chest.inventory.addItem(ItemStack(Material.PUMPKIN_SEEDS,64))
+                chest.inventory.addItem(ItemStack(Material.BEETROOT_SEEDS,64))
+                chest.inventory.addItem(ItemStack(Material.MELON_SEEDS,64))
+                chest.inventory.addItem(ItemStack(Material.TORCHFLOWER_SEEDS,64))
+                chest.inventory.addItem(ItemStack(Material.WHEAT_SEEDS,64))
+                chest.inventory.addItem(ItemStack(Material.IRON_BARS,64))
+                chest.inventory.addItem(ItemStack(Material.POTATO,64))
+                chest.inventory.addItem(ItemStack(Material.CARROT,64))
+                chest.inventory.addItem(ItemStack(Material.APPLE,64))
+                chest.inventory.addItem(ItemStack(Material.BREAD, 64))
+                chest.inventory.addItem(ItemStack(Material.TORCH, 64))
             }
         }
     }
