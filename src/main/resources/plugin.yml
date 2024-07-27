@@ -1,0 +1,8 @@
+name: NoDropOnDeath
+version: 1.0
+main: com.viatoro.mc.NoDropOnDeathPlugin
+api-version: 1.13
+commands:
+  nodrop:
+    description: Toggles item drop on death.
+    usage: /<command>
