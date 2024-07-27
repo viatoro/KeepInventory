@@ -53,7 +53,7 @@ class NoDropOnDeathPlugin : JavaPlugin(), Listener {
                 chest.inventory.addItem(ItemStack(Material.MELON_SEEDS,64))
                 chest.inventory.addItem(ItemStack(Material.TORCHFLOWER_SEEDS,64))
                 chest.inventory.addItem(ItemStack(Material.WHEAT_SEEDS,64))
-                chest.inventory.addItem(ItemStack(Material.IRON_BARS,64))
+                chest.inventory.addItem(ItemStack(Material.IRON_BLOCK,64))
                 chest.inventory.addItem(ItemStack(Material.POTATO,64))
                 chest.inventory.addItem(ItemStack(Material.CARROT,64))
                 chest.inventory.addItem(ItemStack(Material.APPLE,64))
